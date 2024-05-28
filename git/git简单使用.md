@@ -115,6 +115,8 @@ git pull
 git add .
 # git log得到id 
 git log
+# 查看分支是否为需要的
+git branch
 # 查看修改地方
 git diff + (log中id)
 git git commit -m "Initial commit"
