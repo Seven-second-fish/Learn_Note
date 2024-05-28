@@ -1,0 +1,53 @@
+# 初次文件上传操作
+
+# 创建一个文件夹my_project
+将所要添加/更新的文件放到其中
+
+断开VPN操作！！！
+仓库更新克隆都要使用SSH链接，才能在不输入账号密码的情况下操作，类似于以下链接
+git@github.com:Seven-second-fish/learning-note.git
+密钥问题参考git简单使用
+
+# 导航到项目文件夹
+cd my_project
+# 初始化本地Git仓库
+git init
+# 添加远程仓库
+git remote add origin https://github.com/yourusername/my-repo.git
+# 添加所有文件到暂存区
+git add .
+# 提交文件（必须要加上，否则不能提交）
+git commit -m "Initial commit"
+# 推送到远程仓库
+git push -u origin master
+
+# 仓库重命名
+git remote rename origin work
+
+# 分支branch
+
+查看分支：git branch
+创建分支：git branch <name>
+切换分支：git checkout <name>或者git switch <name>
+创建+切换分支：git checkout -b <name>或者git switch -c <name>
+合并某分支到当前分支：git merge <name>
+删除分支：git branch -d <name>
+
+# 更新本地文件到仓库
+
+# 确认在目标分支上，例如 main
+git checkout main
+# 添加文件到暂存区
+git add .
+# 提交更改
+git commit -m "Add new feature"
+# 推送到远程仓库
+git push origin main
+
+# 将仓库代码下载到本地
+
+# 确认在目标分支上，例如 main
+git checkout main
+# 拉取远程仓库的最新更改
+git pull origin main
+
