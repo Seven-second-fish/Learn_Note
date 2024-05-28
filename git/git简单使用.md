@@ -1,5 +1,12 @@
 # Git
 
+## 注意
+
+```bash
+断开VPN操作！！！
+仓库更新克隆都要使用SSH链接，才能在不输入账号密码的情况下操作，类似于以下链接git@github.com:Seven-second-fish/learning-note.git
+```
+
 ## 配置
 
 > 配置全局变量参数
@@ -67,6 +74,49 @@ git clone git@github.com.cnpmjs.org/helloworld.git:
 
 ### 将代码提交至仓库
 
+#### 将本地文件提交到仓库完整步骤
+
+```bash
+# 导航到项目文件夹
+cd my_project
+# 初始化本地Git仓库
+git init
+# 添加远程仓库
+git remote add origin https://github.com/yourusername/my-repo.git
+# 添加所有文件到暂存区
+git add .
+# 提交文件（必须要加上，否则不能提交）
+git commit -m "Initial commit"
+# 推送到远程仓库
+git push -u origin master
+```
+
+#### 将仓库代码下载到本地
+
+> 确认在目标分支上，例如 main
+
+```bash
+git checkout main
+```
+
+> 拉取远程仓库的最新更改
+
+```bash
+git pull origin main
+```
+
+
+
+#### 分支命令
+
+> 创建一个项目文件夹，并导航到项目文件夹
+
+```bash
+cd my_project
+```
+
+
+
 > 将文件存入暂存区
 
 ```bash
@@ -83,7 +133,15 @@ git status
 
 
 
-> 提交到本地仓库
+> 添加远程仓库
+
+```bash
+git remote add origin https://github.com/yourusername/my-repo.git
+```
+
+
+
+> 提交到本地仓库（必须要加上，否则不能提交）
 
 ```bash
 git commit -m "提交备注信息"
@@ -103,6 +161,9 @@ git log
 
 ``` bash
 git push
+
+#或者
+git push -u origin master
 ```
 
 
@@ -433,5 +494,59 @@ Date:   Wed May 26 01:32:25 2021 +0800
 
 yes
 
-### git Bug
+### git branch --分支
 
+```bash
+查看分支：git branch
+创建分支：git branch <name>
+切换分支：git checkout <name>或者git switch <name>
+创建+切换分支：git checkout -b <name>或者git switch -c <name>
+合并某分支到当前分支：git merge <name>
+删除分支：git branch -d <name>
+```
+
+#### 仓库重命名
+
+```bash
+git remote rename origin work
+```
+
+
+
+### git相关Bug
+
+1. error: remote origin already exists.
+
+   ```bash
+   表示远程仓库已存在。
+   因此你要进行以下操作：
+   1、先输入git remote rm origin 删除关联的origin的远程库
+   2、关联自己的仓库 git remote add origin https://gitee.com/xxxxxx.git
+   3、最后git push origin master，这样就推送到自己的仓库了。
+   ```
+
+2. OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 0
+
+   ```bash
+   无解决，我尝试删除重新做
+   ```
+
+3. Failed to connect to github.com port 443 after 21104 ms: Couldn't connect to server
+
+   ```bash
+   使用VPN时
+   
+   调整Git代理设置
+   git config --global http.proxy, 
+   git config --global https.proxy
+   
+   未使用VPN时
+   
+   取消Git代理设置
+   git config --global --unset http.proxy, 
+   git config --global --unset https.proxy
+   
+   我也不知有没有奏效，反正我重置的
+   ```
+
+   
