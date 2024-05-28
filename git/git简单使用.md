@@ -105,6 +105,22 @@ git checkout main
 git pull origin main
 ```
 
+#### 更新文件
+
+> 完整步骤
+
+```bash
+# 先更新仓库内容到本地
+git pull
+git add .
+# git log得到id 
+git log
+# 查看修改地方
+git diff + (log中id)
+git git commit -m "Initial commit"
+git push
+```
+
 
 
 #### 分支命令
