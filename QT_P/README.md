@@ -62,5 +62,55 @@
 
 > 项目参考 [Qt项目作品大全-CSDN博客](https://blog.csdn.net/ly305750665/article/details/108089368)
 
-#### 1.
+> 大佬参考 [飞扬青云](https://github.com/feiyangqingyun)
+
+> 以下参考 [Github上的一些高分Qt开源项目【多图】_github上好的qt项目-CSDN博客](https://blog.csdn.net/ccf19881030/article/details/113007901)
+
+#### 1、TileMap-游戏2D地图编辑器
+
+#### 2、litego-基于Qt的Go集成开发环境
+
+#### 3. Clementine Music Player
+
+#### 4、QtAV-FFmpeg的Q封装
+
+#### 5、shotcut-视频编辑软件)
+
+#### 6、qTox- IM客户端
+
+#### 7、livehelperchat -IM客户端
+
+#### 8、qupzilla- Qt开发的Web浏览器
+
+#### 9、otter-browser-另一款Qt开发的Web浏览器
+
+#### 10、CuteMarkEd-Qt开发的Markdown编辑器
+
+#### 11、Rythem - Qt版的fiddler
+
+#### 12、nitroshare-desktop-网络文件传输客户端
+
+#### 13、ProjectTox-Qt-GUI-简版IM
+
+#### 14、screencloud-截屏分享工具
+
+#### 15、notes -记事本
+
+#### 16、QFramer-U封装，国人作品
+
+#### 17、OAuth 2.0 for Qt
+
+#### 18、JQTools -Jason Qt Tools 的简称
+
+#### 19、QtAwesome
+
+#### 个人认为比较好的Q项目
+
+#### 1、PacketSender-用于发送/接收TCP，UDP,SSL的网络工具
+
+#### 2、QGIS－一款免费、开源、跨平台（支持Linux、Windows、Mac）的地理信息系统（GIS)
+
+#### 3、QtCipherSqlitePlugin-带有加密功能的 SQLite Qt 插件
+
+#### 4、 RedisDesktopManager - Cross-platform GUl management tool for RedisWPS 国产的Office软件，也是基于QT开发的刘典武老师的QT系列作品参考资料
 
