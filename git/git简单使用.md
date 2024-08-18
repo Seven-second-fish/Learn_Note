@@ -529,7 +529,12 @@ yes
 git remote rename origin work
 ```
 
+#### git克隆加速
 
+```
+将git clone https://github.com/tendermint/tendermint.git
+改为git clone https://gitclone.com/github.com/tendermint/tendermint.git
+```
 
 ### git相关Bug
 
